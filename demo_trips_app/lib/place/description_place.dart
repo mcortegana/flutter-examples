@@ -13,7 +13,10 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         Text(
           this.namePlace,
-          style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.w900),
+          style: TextStyle(
+              fontFamily: "Lato",
+              fontSize: 30.0,
+              fontWeight: FontWeight.w900),
           textDirection: TextDirection.ltr,
         )
       ],
@@ -24,6 +27,7 @@ class DescriptionPlace extends StatelessWidget {
     return Text(
         this.summaryPlace,
         style: TextStyle(
+          fontFamily: "Lato",
           fontSize: 13,
           fontWeight: FontWeight.bold,
           color: Colors.blueGrey,

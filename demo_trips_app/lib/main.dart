@@ -1,4 +1,5 @@
-import 'package:demo_trips_app/description_place.dart';
+import 'package:demo_trips_app/place/description_place.dart';
+import 'package:demo_trips_app/review/review_list.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +22,8 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text('Inicio'),
           ),
-          body: new DescriptionPlace('Tejeringoelchico',5,fakeDescription),
+//          body: new DescriptionPlace('Tejeringoelchico',0,fakeDescription),
+        body: ReviewList(),
         )
     );
   }
