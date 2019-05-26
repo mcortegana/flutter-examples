@@ -1,3 +1,4 @@
+import 'package:demo_trips_app/shared/button.dart';
 import 'package:flutter/material.dart';
 
 class DescriptionPlace extends StatelessWidget {
@@ -82,12 +83,14 @@ class DescriptionPlace extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.only(top: 240, right: 20, bottom: 10, left: 20),
+      margin: EdgeInsets.only(top: 360, right: 20, bottom: 10, left: 20),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           createPlaceName(),
           createRating(),
-          createPlaceDescription()
+          createPlaceDescription(),
+          Button('Navigate', 0xFF4268D3, 0xFF584CD1, context)
         ],
       ),
     );
