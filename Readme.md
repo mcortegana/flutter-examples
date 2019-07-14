@@ -1,10 +1,26 @@
 # APUNTES DE FLUTTER
 
+El archivo principal de una aplicación en flutter es el archivo *main.dart* ubicado en la carpeta *libs* del proyecto.
+
+La primera declaración que se hará es importar el paquete ***package:flutter/material.dart***, que es el que nos permitirá trabajar con las librerias de flutter.
+
+La función ***main*** dentro de este archivo dart será la que se ejecutará cuando se ejecute una aplicación de Flutter y esta a su vez ejecutará la función ***runApp*** 
+
+```dart
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(app);
+}
+```
+
+Esta función ***runApp*** recibe como parámetro un **Widget** que será nuestra aplicación.
+
+## Widgets
+
 > En **flutter** todo es un widget
 
 Los **Widgets** son los componentes principales de una aplicación y en *Flutter* no es la excepción.
-
-## Widgets
 
 #### Widgets Básicos
 
@@ -34,6 +50,8 @@ Los **Widgets** básicos son el punto de partida al momento de crear *Widgets Pe
 #### StatefulWidgets
 
 Son todos los *widgets* con los que el usuario de la aplicación puede tener una interacción directa. Por ejemplo: *Checkbox, Radio, Slider, Form*. Este tipo de *widgets* por lo general disparan algún evento, acción o comportamiento determinado como respuesta a la interacción con el usuario.
+
+Los **StatefulWidgets** constan de 2 partes, que son el **Widget** como tal y el **estado** del widget.
 
 #### StatelessWidgets
 
